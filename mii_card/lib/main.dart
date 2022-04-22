@@ -14,6 +14,12 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black,//Image.asset('images/111.jpg').color,
         body: SafeArea(
+          child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage("https://www.bing.com/th/id/OGC.ade9399eb5ecb3d37448007e69a0b622?pid=1.7&rurl=https%3a%2f%2fgifimage.net%2fwp-content%2fuploads%2f2018%2f06%2ftech-gif-1.gif&ehk=s3ncLfbXUV%2bK%2fvBlqDWpqblhJuoO5KMRYP3PTmnlDAw%3d"),
+              fit: BoxFit.cover),
+              ),
           child: Column(
           children:<Widget>[ 
         SizedBox(height: 70.0,),
@@ -99,6 +105,7 @@ class MyApp extends StatelessWidget {
 
     ),
    ),
+  ),
   );
  }
 }
