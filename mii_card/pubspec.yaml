@@ -58,6 +58,8 @@ flutter:
   uses-material-design: true
   assets:
   - images/badge.png
+  - images/gif.gif
+  - images/111.jpg
   fonts:
   - family: FredokaOne
     fonts:
@@ -68,6 +70,15 @@ flutter:
   - family: RubikWetPaint
     fonts:
     - asset: fonts/RubikWetPaint-Regular.ttf
+  - family: MajorMonoDisplay-Regular
+    fonts:
+    - asset: fonts/MajorMonoDisplay-Regular.ttf
+  - family: Tapestry-Regular
+    fonts:
+    - asset: fonts/Tapestry-Regular.ttf
+  - family: Bangers-Regular
+    fonts:
+    - asset: fonts/Bangers-Regular.ttf
   
 
   # To add assets to your application, add an assets section, like this:

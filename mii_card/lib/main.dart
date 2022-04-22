@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.black,//Image.asset('images/111.jpg').color,
         body: SafeArea(
           child: Column(
           children:<Widget>[ 
@@ -32,14 +32,68 @@ class MyApp extends StatelessWidget {
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
             color: Colors.white,
-          ),),
+          ),
+          ),
           Text('FLUTTER DEVELOPER',
           style: TextStyle(
             fontFamily: 'RubikMoonrocks',
             color: Colors.amber.shade100,
           ),
-          
-          ),
+         ),
+         Card(
+           margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 450.0),
+           color: Colors.white,
+           child: Padding(
+             padding: EdgeInsets.symmetric(vertical: 1, horizontal: 80.0),
+             
+           child: Row( 
+           children: [
+             Icon(
+             Icons.call,
+             color: Colors.teal,
+           ),
+           Text('   +91 9717267311',
+           style: TextStyle(
+             fontSize: 20.0,
+             color: Colors.blue,
+             fontFamily: 'Bangers-Regular',
+             fontWeight: FontWeight.bold,
+           ),
+           ),
+           ],
+           ),
+
+           ),
+           
+           
+         ),
+
+         Card(
+           color: Colors.white,
+           margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 450.0),
+           child: Padding(
+             padding: EdgeInsets.symmetric(vertical: 1, horizontal: 15.0),
+             
+           child: Row( 
+           children: [
+             Icon(
+             Icons.mail,
+             color: Colors.teal,
+           ),
+           Text(' atulsharma28092004@gmail.com',
+           style: TextStyle(
+             fontSize: 15.0,
+             fontFamily: 'MajorMonoDisplay-Regular',
+             color: Colors.blue,
+             fontWeight: FontWeight.bold,
+           ),),
+           ],
+           ),
+             ),
+             ),
+           
+           
+        
         ],
       ),
 
