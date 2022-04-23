@@ -21,12 +21,8 @@ class MyApp extends StatelessWidget {
               fit: BoxFit.cover),
               ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
           children:<Widget>[ 
-        SizedBox(height: 70.0,),
-            Container(
-              width: double.infinity,
-              height: 50.0,
-              ),
         CircleAvatar(
           radius: 50.0,
           backgroundImage: AssetImage('images/badge.png'),
@@ -45,6 +41,10 @@ class MyApp extends StatelessWidget {
             fontFamily: 'RubikMoonrocks',
             color: Colors.amber.shade100,
           ),
+         ),
+         SizedBox(height: 20.0, width:150.0,
+         child: Divider(color: Colors.teal.shade100,
+         ),
          ),
          Card(
            margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 450.0),
@@ -68,10 +68,7 @@ class MyApp extends StatelessWidget {
            ),
            ],
            ),
-
-           ),
-           
-           
+           ),   
          ),
 
          Card(
